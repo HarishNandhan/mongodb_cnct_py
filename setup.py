@@ -3,7 +3,7 @@ from typing import List
 
 HYPEN_E_DOT='-e .'
 
-'''def get_requiremet(file_path:str)->List[str]:
+'''def get_requirement(file_path:str)->List[str]:
     requirements = []
     with open(file_path) as f:
         requirements=f.readlines()
@@ -19,8 +19,8 @@ with open('README.md', 'r', encoding='utf-8') as f:
    
 
 __version__ = "0.0.6"
-REPO_NAME = "mongodb_connector"
-PKG_NAME= "MongoConnect"
+REPO_NAME = "mongodb_cnct_py"
+PKG_NAME= "mongocnct-python"
 AUTHOR_USER_NAME = "HarishNandhan"
 AUTHOR_EMAIL = "harishnandhan02@gmail.com"
 
@@ -38,6 +38,6 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    
+    install_requires = get_requirement("requirements_dev.txt")
     
 )
