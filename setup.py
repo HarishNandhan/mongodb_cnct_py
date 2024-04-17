@@ -7,9 +7,9 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
    
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 REPO_NAME = "mongodb_cnct_py"
-PKG_NAME= "dbautomation"
+PKG_NAME= "db-cnct-pkg"
 AUTHOR_USER_NAME = "HarishNandhan"
 AUTHOR_EMAIL = "harishnandhan02@gmail.com"
 
